@@ -1,0 +1,119 @@
+header{
+    display:flex;
+    background-color: #6FB2D2;
+    padding: 20px;
+    color: bisque;
+}
+nav{
+    background-color: #062C30 ;
+    color: bisque;
+    padding: 20px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+article{
+    background-color: #d6e6cd;
+    grid-column:1/4 ;
+}
+aside{
+    background-color: #F7E9D7;
+    padding: 30px;
+    grid-column: 4/5;
+}
+footer{
+    background-color: black;
+    color: antiquewhite;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menu li a:hover{
+    color: #ce7d35;
+}
+.menu > li > a{
+
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.sub1 {
+    margin: 0px;
+    position: absolute;
+    background: #333333;
+    display: none;
+}
+.sub1 li a{
+    display: block;
+    padding: 15px;
+    color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.menu li:hover .sub1 {
+    display: block;
+}
+.sub2 {
+    margin: 0px;
+    position: absolute;
+    background: #333333;
+    display: none;
+}
+.sub2 li a{
+    display: block;
+    padding: 15px;
+    color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.menu li:hover .sub2 {
+    display: block;
+}
+.sub3 {
+    margin: 0px;
+    position: absolute;
+    background: #333333;
+    display: none;
+}
+.sub3 li a{
+    display: block;
+    padding: 15px;
+    color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.menu li:hover .sub3 {
+    display: block;
+}
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 150%;
+    margin: 30px;
+    color: #333333;
+}
+img{
+    float: left;
+    margin-right: 20px;
+    width: 210px;
+}
+embed{
+    float: left;
+    margin-right: 20px;
+}
+@media screen and (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:768px){
+    .menu{
+        flex-direction: column;
+    }
+}
+
+
